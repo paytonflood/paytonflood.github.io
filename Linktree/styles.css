@@ -8,21 +8,34 @@ body{
     margin-right: auto;
 
     margin-top: 0%;
-    height: 200px;
-    max-width: 200px;
+    height: 250px;
+    max-width: 250px;
 
     border-radius: 50%;
 }
 
 .profile-name{
     font-family: monospace;
-    color: rgb(0, 0, 0);
+    color: tan;
     font-weight: bold;
     text-align: center;
     letter-spacing: 2px;
 
     padding: 30px;
     font-size: 30px;
+}
+
+.aboutmeheader{
+    margin-top: 100px;
+    font-family: monospace;
+    text-align: center;
+
+    color:rgb(0, 0, 0)
+}
+
+.aboutme{
+    font-family: monospace;
+    text-align: center;
 }
 
 .links{
@@ -52,5 +65,11 @@ a{
 a:hover{
     color: black;
 
-    background-color: rgb(255, 215, 215);
+    background-color: tan;
+}
+
+.mountain{
+
+    
+
 }
