@@ -1,0 +1,75 @@
+body{
+    background-color:slategray;
+}
+
+.profile-picture{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 0%;
+    height: 250px;
+    max-width: 250px;
+
+    border-radius: 50%;
+}
+
+.profile-name{
+    font-family: monospace;
+    color: tan;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+
+    padding: 30px;
+    font-size: 30px;
+}
+
+.aboutmeheader{
+    margin-top: 100px;
+    font-family: monospace;
+    text-align: center;
+
+    color:rgb(0, 0, 0)
+}
+
+.aboutme{
+    font-family: monospace;
+    text-align: center;
+}
+
+.links{
+    text-align: center;
+    margin-top: 20px;
+    border: 2px solid rgb(0, 0, 0);
+    border-width: 2px;
+    padding: 20px;
+
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+}
+
+a{
+    text-decoration: none;
+
+    color: black;
+    transition: color 1s;
+}
+
+a:hover{
+    color: black;
+
+    background-color: tan;
+}
+
+.mountain{
+
+    
+
+}
