@@ -1,22 +1,34 @@
 body{
-    background-color:slategray;
+    background-color:rgb(21, 30, 39);
 }
 
-.profile-picture{
+#banner{
     display: block;
+    background-color: rgb(0, 0, 0);
+    height: 85px;
+}
+
+.prof-pic{
+    display: block;
+    border-radius: 50%;
+    height: 250px;
+    
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+}
 
-    margin-top: 0%;
-    height: 250px;
-    max-width: 250px;
+.logo{
+    margin-left: 10px;
+}
 
-    border-radius: 50%;
+.logo:hover{
+    background-color:rgb(137, 205, 250);
 }
 
 .profile-name{
     font-family: monospace;
-    color: tan;
+    color: rgb(137, 205, 250);
     font-weight: bold;
     text-align: center;
     letter-spacing: 2px;
@@ -25,24 +37,28 @@ body{
     font-size: 30px;
 }
 
-.aboutmeheader{
-    margin-top: 100px;
+.about-me-title{
+    margin-top: 50px;
+    margin-bottom: 10px;
     font-family: monospace;
     text-align: center;
 
-    color:rgb(0, 0, 0)
+    color:rgb(137, 205, 250);
 }
 
 .aboutme{
     font-family: monospace;
     text-align: center;
+    
+    margin-bottom: 50px;
+    color:rgb(137, 205, 250);
 }
 
 .links{
     text-align: center;
     margin-top: 20px;
-    border: 2px solid rgb(0, 0, 0);
-    border-width: 2px;
+    border: 2px solid rgb(137, 205, 250);
+    border-width: 3px;
     padding: 20px;
 
     width: 290px;
@@ -58,18 +74,12 @@ body{
 a{
     text-decoration: none;
 
-    color: black;
+    color: rgb(137, 205, 250);
     transition: color 1s;
 }
 
 a:hover{
     color: black;
 
-    background-color: tan;
-}
-
-.mountain{
-
-    
-
+    background-color: rgb(137, 205, 250);
 }
