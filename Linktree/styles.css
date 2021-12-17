@@ -47,7 +47,6 @@ body{
 .container:hover .overlay{
     opacity: 100;
     margin-top: -13px;
-    margin-left: 3px;
 }
 
 .logo-hover-text{
