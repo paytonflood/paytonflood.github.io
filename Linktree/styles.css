@@ -1,13 +1,14 @@
+/*used to set background color*/
 body{
     background-color:rgb(21, 30, 39);
 }
-
+/*black banner at top*/
 .banner{
     position: relative;
     background-color: rgb(0, 0, 0);
     height: 85px;
 }
-
+/*main profile pic*/
 .prof-pic{
     display: block;
     border-radius: 50%;
@@ -17,44 +18,19 @@ body{
     margin-right: auto;
     margin-top: 20px;
 }
-
+/*top left logo and link back to homepage*/
 .logo{
     position: absolute;
     display: block;
-    margin-left: 8px;
-    margin-top: -85px;
+    margin-left: 15px;
+    margin-top: -80px;
 }
-
-.container{
+.logo-container{
     position: relative;
     width: 66px;
     margin-left: 3px;
 }
-
-.overlay{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .35s ease;
-    background-color: rgb(137, 205, 250);
-}
-
-.container:hover .overlay{
-    opacity: 100;
-    margin-top: -13px;
-}
-
-.logo-hover-text{
-    font-family: monospace;
-    color: rgb(137, 205, 250);
-    font-size: 10px;
-}
-
+/*name under profile pic*/
 .profile-name{
     font-family: monospace;
     color: rgb(137, 205, 250);
@@ -65,27 +41,15 @@ body{
     padding: 30px;
     font-size: 30px;
 }
-
-.about-me-title{
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-family: monospace;
-    text-align: center;
-
-    color:rgb(137, 205, 250);
-}
-
-.aboutme{
-    font-family: monospace;
-    text-align: center;
-    
-    margin-bottom: 50px;
-    color:rgb(137, 205, 250);
-}
-
+/*Linktree text, links, and hover*/
 .links{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
     border: 2px solid rgb(137, 205, 250);
     border-width: 3px;
     padding: 20px;
@@ -99,16 +63,80 @@ body{
 
     font-size: 18px;
 }
-
-a{
-    text-decoration: none;
-
-    color: rgb(137, 205, 250);
-    transition: color 1s;
-}
-
-a:hover{
+.links:hover{
     color: black;
-
     background-color: rgb(137, 205, 250);
+}
+/* Contact Me Dropdown*/
+.contactme-button{
+    font-family: monospace;
+    font-size: 18;
+    font-weight: bold;
+
+    margin-left: 130px;
+    margin-top: -60px;
+
+    width: 120px;
+    height: 30px;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+}
+.contactme-button:hover{
+    color: rgb(156, 156, 156);
+    transition: color .5s;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+}
+.dropdown-content {
+    margin-left: 145px;
+    margin-top: -30px;
+
+    text-align: center;
+    font-family: monospace;
+    display: none;
+
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: black;
+    transition: .35s ease;
+}
+.dropdown-content a, p{
+    display: block;
+    color: rgb(137, 205, 250);
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #5c5c5c;
+}
+/*about me button*/
+.abtmelink{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+
+    width: 120px;
+    display: block;
+    margin-left: 300px;
+    margin-top: -55px;
+
+    font-size: 18px;
+}
+.abtmelink:hover{
+    color: rgb(156, 156, 156);
+    transition: color .5s;
 }

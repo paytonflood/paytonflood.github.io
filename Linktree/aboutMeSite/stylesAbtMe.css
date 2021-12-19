@@ -1,0 +1,121 @@
+body{
+    background-color:rgb(21, 30, 39);
+}
+/*black banner at top*/
+.banner{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 85px;
+}
+/*main profile pic*/
+.prof-pic{
+    display: block;
+    border-radius: 50%;
+    height: 250px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+/*top left logo and link back to homepage*/
+.logo{
+    position: absolute;
+    display: block;
+    margin-left: 15px;
+    margin-top: -80px;
+}
+.logo-container{
+    position: relative;
+    width: 66px;
+    margin-left: 3px;
+}
+/* Contact Me Dropdown*/
+.contactme-button{
+    font-family: monospace;
+    font-size: 18;
+    font-weight: bold;
+
+    margin-left: 130px;
+    margin-top: -60px;
+
+    width: 120px;
+    height: 30px;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+}
+.contactme-button:hover{
+    color: rgb(156, 156, 156);
+    transition: color .5s;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+}
+.dropdown-content {
+    margin-left: 145px;
+    margin-top: -30px;
+
+    text-align: center;
+    font-family: monospace;
+    display: none;
+
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: black;
+    transition: .35s ease;
+}
+.dropdown-content a, p{
+    display: block;
+    color: rgb(137, 205, 250);
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #5c5c5c;
+}
+/*about me button*/
+.abtmelink{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+
+    width: 120px;
+    display: block;
+    margin-left: 300px;
+    margin-top: -55px;
+
+    font-size: 18px;
+}
+.abtmelink:hover{
+    color: rgb(156, 156, 156);
+    transition: color .5s;
+}
+/*About me text and title*/
+.about-me-title{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-family: monospace;
+    text-align: center;
+
+    color:rgb(137, 205, 250);
+}
+.aboutme{
+    font-family: monospace;
+    text-align: center;
+    font-size: 14px;
+
+    margin-bottom: 50px;
+    color:rgb(137, 205, 250);
+}
