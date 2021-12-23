@@ -1,6 +1,6 @@
 /*used to set background color*/
 body{
-    background-color:rgb(21, 30, 39);
+    background-color:rgb(16, 20, 15);
 }
 /*black banner at top*/
 .banner{
@@ -11,12 +11,11 @@ body{
 /*main profile pic*/
 .prof-pic{
     display: block;
-    border-radius: 50%;
-    height: 250px;
-    
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+
+    border-radius: 1%;
+
+    height: 400px;
+    width: 100%;
 }
 /*top left logo and link back to homepage*/
 .logo{
@@ -33,24 +32,42 @@ body{
 /*name under profile pic*/
 .profile-name{
     font-family: monospace;
-    color: rgb(137, 205, 250);
+    color: #FF5555;
     font-weight: bold;
     text-align: center;
     letter-spacing: 2px;
 
     padding: 30px;
     font-size: 30px;
+    margin-top: 10px;
+}
+/*about me section*/
+.about-me-title{
+    margin-top: 300px;
+    margin-bottom: 10px;
+
+    font-family: monospace;
+    text-align: center;
+
+    color:#22D2A0;
+}
+.aboutme{
+    font-family: monospace;
+    text-align: center;
+    font-size: 14px;
+
+    margin-bottom: 50px;
 }
 /*Linktree text, links, and hover*/
-.links{
+.links1{
     text-decoration: none;
     font-family: monospace;
     color: white;
 
     text-align: center;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 20px;
-    border: 2px solid rgb(137, 205, 250);
+    border: 2px solid #FF9C55;
     border-width: 3px;
     padding: 20px;
 
@@ -63,9 +80,62 @@ body{
 
     font-size: 18px;
 }
-.links:hover{
+.links1:hover{
     color: black;
-    background-color: rgb(137, 205, 250);
+    background-color: rgb(151, 151, 151);
+    opacity: 50%;
+}
+.links2{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #FFD913;
+    border-width: 3px;
+    padding: 20px;
+
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+}
+.links2:hover{
+    color: black;
+    background-color: rgb(151, 151, 151);
+    opacity: 50%;
+}
+.links3{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #1FC11B;
+    border-width: 3px;
+    padding: 20px;
+
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+}
+.links3:hover{
+    color: black;
+    background-color: rgb(151, 151, 151);
+    opacity: 50%;
 }
 /* Contact Me Dropdown*/
 .contactme-button{
@@ -85,8 +155,8 @@ body{
     border: none;
 }
 .contactme-button:hover{
-    color: rgb(156, 156, 156);
-    transition: color .5s;
+    color: #FF5555;
+    transition: color .25s;
 }
 .dropdown {
     display: inline-block;
@@ -113,7 +183,7 @@ body{
 }
 .dropdown-content a, p{
     display: block;
-    color: rgb(137, 205, 250);
+    color: rgb(255, 228, 194);
     padding: 5px;
     text-decoration: none;
 }
@@ -137,6 +207,103 @@ body{
     font-size: 18px;
 }
 .abtmelink:hover{
-    color: rgb(156, 156, 156);
-    transition: color .5s;
+    color: #FF9C55;
+    transition: color .25s;
 }
+
+/*animation for profile pic*/
+.card {
+
+    background-color: var(--background);
+    display: block;
+    width: 300px;
+    min-height: 90px;
+    cursor: pointer;
+    padding: 15px;
+
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 3px solid var(--primary);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+          20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+          30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+          40px -40px 0 -3px var(--background), 40px -40px var(--red);
+  }
+  
+  .card:hover {
+    animation: shadow-wave 1s ease infinite;
+  }
+  
+  
+  @keyframes shadow-wave {
+    0% {
+      border: 3px solid var(--primary);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+    }
+    20% {
+      border: 3px solid var(--red);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--primary),
+        20px -20px 0 -3px var(--background), 20px -20px var(--green),
+        30px -30px 0 -3px var(--background), 30px -30px var(--yellow),
+        40px -40px 0 -3px var(--background), 40px -40px var(--orange);
+    }
+    40% {
+      border: 3px solid var(--orange);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--red),
+        20px -20px 0 -3px var(--background), 20px -20px var(--primary),
+        30px -30px 0 -3px var(--background), 30px -30px var(--green),
+        40px -40px 0 -3px var(--background), 40px -40px var(--yellow);
+    }
+    60% {
+      border: 3px solid var(--yellow);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--orange),
+        20px -20px 0 -3px var(--background), 20px -20px var(--red),
+        30px -30px 0 -3px var(--background), 30px -30px var(--primary),
+        40px -40px 0 -3px var(--background), 40px -40px var(--green);
+    }
+    80% {
+      border: 3px solid var(--green);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--yellow),
+        20px -20px 0 -3px var(--background), 20px -20px var(--orange),
+        30px -30px 0 -3px var(--background), 30px -30px var(--red),
+        40px -40px 0 -3px var(--background), 40px -40px var(--primary);
+    }
+    100% {
+      border: 3px solid var(--primary);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+    }
+    
+  }
+  
+  
+  :root {
+    --primary: #22D2A0;
+    --secondary: #192824;
+    --background: #192824;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+  } 
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: radial-gradient(var(--secondary) 30%, var(--background) 30%);
+    background-size: 2px 3px;
+    font-family: "Archivo", sans-serif;
+    color: var(--primary);
+  }
+  
