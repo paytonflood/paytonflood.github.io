@@ -38,12 +38,13 @@ body{
     letter-spacing: 2px;
 
     padding: 30px;
-    font-size: 30px;
+    font-size: 50px;
     margin-top: 10px;
 }
 /*about me section*/
 .about-me-title{
-    margin-top: 300px;
+    font-size: 20px;
+    margin-top: 200px;
     margin-bottom: 10px;
 
     font-family: monospace;
@@ -65,7 +66,7 @@ body{
     color: white;
 
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 20px;
     border: 2px solid #FF9C55;
     border-width: 3px;
@@ -210,6 +211,88 @@ body{
     color: #FF9C55;
     transition: color .25s;
 }
+
+/*SKILLS*/
+/*Skills Button*/
+.skilllink{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+
+    width: 120px;
+    display: block;
+    margin-left: 440px;
+    margin-top: -55px;
+
+    font-size: 18px;
+}
+.skilllink:hover{
+    color: #FFD913;
+    transition: color .25s;
+}
+
+/*Skills Header*/
+.skills{
+    font-size: 20px;
+    font-family: monospace;
+
+    display: block;
+    text-align: center;
+
+    margin-top: 200px;
+
+    color: #22D2A0;
+}
+/*Skills Text*/
+.skills-txt{
+    font-family: monospace;
+
+    display: block;
+    text-align: center;
+
+    margin-top: 20px;
+
+    color:rgb(255, 228, 194);
+}
+.skills-txt h1{
+    color: #FF5555;
+
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+.skills-txt h2{
+    color: #FF9C55;
+
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+.skills-txt h3{
+    color: #FFD913;
+
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+.skills-txt h4{
+    color: #1FC11B;
+
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+
 
 /*animation for profile pic*/
 .card {
