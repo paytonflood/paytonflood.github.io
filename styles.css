@@ -294,6 +294,15 @@ body{
 
     font-size: 30px;
 }
+.skills-txt h5{
+    color: #FF5555;
+    
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
 
 
 /*animation for profile pic*/
