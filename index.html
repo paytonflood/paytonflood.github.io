@@ -1,91 +1,409 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Payton Flood</title>
-</head>
+/*used to set background color*/
+body{
+    background-color:rgb(77, 116, 68);
+}
+/*black banner at top*/
+.banner{
+    position: relative;
+    background-color: rgb(0, 0, 0);
+    height: 85px;
+    width: 100%;
+}
+/*main profile pic*/
+.prof-pic{
+    display: block;
 
-<body>
+    border-radius: 1%;
+
+    height: 400px;
+    width: 100%;
+}
+/*top left logo and link back to homepage*/
+.logo{
+    position: absolute;
+    display: block;
+    margin-left: 15px;
+    margin-top: -80px;
+}
+.logo-container{
+    position: relative;
+    width: 66px;
+    margin-left: 3px;
+}
+/*name under profile pic*/
+.profile-name{
+    font-family: monospace;
+    color: #FF5555;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+
+    padding: 30px;
+    font-size: 50px;
+    margin-top: 10px;
+}
+/*about me section*/
+.about-me-title{
+    font-size: 20px;
+    margin-top: 200px;
+    margin-bottom: 10px;
+
+    font-family: monospace;
+    text-align: center;
+
+    color:#22D2A0;
+}
+.aboutme{
+    font-family: monospace;
+    text-align: center;
+    font-size: 14px;
+
+    margin-bottom: 50px;
+}
+/*Linktree text, links, and hover*/
+.links1{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #FF9C55;
+    border-width: 3px;
+    padding: 20px;
+
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+}
+.links1:hover{
+    color: black;
+    background-color: #ffffff;
+    opacity: 70%;
+
+    transition: ease 900ms;
+}
+.links2{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #FFD913;
+    border-width: 3px;
+    padding: 20px;
+
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+}
+.links2:hover{
+    color: black;
+    background-color: #ffffff;
+    opacity: 70%;
+
+    transition: ease 900ms;
+}
+.links3{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #1FC11B;
+    border-width: 3px;
+    padding: 20px;
+
+    width: 290px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 40px;
+
+    font-size: 18px;
+}
+.links3:hover{
+    color: black;
+    background-color: #ffffff;
+    opacity: 70%;
+
+    transition: ease 900ms;
+}
+/* Contact Me Dropdown*/
+.contactme-button{
+    font-family: monospace;
+    font-size: 18;
+    font-weight: bold;
+
+    margin-left: 130px;
+    margin-top: -60px;
+
+    width: 120px;
+    height: 30px;
+
+    background-color: black;
+    color: white;
+
+    border: none;
+}
+.contactme-button:hover{
+    color: #FF5555;
+    transition: color .25s;
+}
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 100px;
+}
+.dropdown-content {
+    margin-left: 145px;
+    margin-top: -30px;
+
+    text-align: center;
+    font-family: monospace;
+    display: none;
+
+    position: absolute;
+    width: 100%;
+    overflow: auto;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: black;
+    transition: .35s ease;
+}
+.dropdown-content a, p{
+    display: block;
+    color: rgb(255, 228, 194);
+    padding: 5px;
+    text-decoration: none;
+}
+.dropdown-content a:hover {
+    color: #FFFFFF;
+    background-color: #5c5c5c;
+}
+/*about me button*/
+.abtmelink{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+
+    width: 120px;
+    display: block;
+    margin-left: 300px;
+    margin-top: -55px;
+
+    font-size: 18px;
+}
+.abtmelink:hover{
+    color: #FF9C55;
+    transition: color .25s;
+}
+
+/*SKILLS*/
+/*Skills Button*/
+.skilllink{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+
+    width: 120px;
+    display: block;
+    margin-left: 440px;
+    margin-top: -55px;
+
+    font-size: 18px;
+}
+.skilllink:hover{
+    color: #FFD913;
+    transition: color .25s;
+}
+
+/*Skills Header*/
+.skills{
+    font-size: 20px;
+    font-family: monospace;
+
+    display: block;
+    text-align: center;
+
+    margin-top: 200px;
+
+    color: #22D2A0;
+}
+/*Skills Text*/
+.skills-txt{
+    font-family: monospace;
+
+    display: block;
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    color:rgb(255, 228, 194);
+}
+.skills-txt h1{
+    color: #FF5555;
+
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+.skills-txt h2{
+    color: #FF9C55;
+
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+.skills-txt h3{
+    color: #FFD913;
+
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+.skills-txt h4{
+    color: #1FC11B;
+
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+.skills-txt h5{
+    color: #60a0f5;
+
+    margin-right: 33%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+}
+
+
+/*animation for profile pic*/
+.card {
+
+    background-color: var(--background);
+    display: block;
+    width: 300px;
+    min-height: 90px;
+    cursor: pointer;
+    padding: 15px;
+
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border: 3px solid var(--primary);
+    box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+          20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+          30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+          40px -40px 0 -3px var(--background), 40px -40px var(--red);
+  }
+  
+  .card:hover {
+    animation: shadow-wave 1s ease infinite;
+  }
+  
+  
+  @keyframes shadow-wave {
+    0% {
+      border: 3px solid var(--primary);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+    }
+    20% {
+      border: 3px solid var(--red);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--primary),
+        20px -20px 0 -3px var(--background), 20px -20px var(--green),
+        30px -30px 0 -3px var(--background), 30px -30px var(--yellow),
+        40px -40px 0 -3px var(--background), 40px -40px var(--orange);
+    }
+    40% {
+      border: 3px solid var(--orange);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--red),
+        20px -20px 0 -3px var(--background), 20px -20px var(--primary),
+        30px -30px 0 -3px var(--background), 30px -30px var(--green),
+        40px -40px 0 -3px var(--background), 40px -40px var(--yellow);
+    }
+    60% {
+      border: 3px solid var(--yellow);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--orange),
+        20px -20px 0 -3px var(--background), 20px -20px var(--red),
+        30px -30px 0 -3px var(--background), 30px -30px var(--primary),
+        40px -40px 0 -3px var(--background), 40px -40px var(--green);
+    }
+    80% {
+      border: 3px solid var(--green);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--yellow),
+        20px -20px 0 -3px var(--background), 20px -20px var(--orange),
+        30px -30px 0 -3px var(--background), 30px -30px var(--red),
+        40px -40px 0 -3px var(--background), 40px -40px var(--primary);
+    }
+    100% {
+      border: 3px solid var(--primary);
+      box-shadow: 10px -10px 0 -3px var(--background), 10px -10px var(--green),
+        20px -20px 0 -3px var(--background), 20px -20px var(--yellow),
+        30px -30px 0 -3px var(--background), 30px -30px var(--orange),
+        40px -40px 0 -3px var(--background), 40px -40px var(--red);
+    }
     
-    <!--Banner-->
-    <div class="banner"> </div>
-    
-    <!--Personal Logo-->
-    <div class ="logo-container">
-        <img src="thumbnail_IMG_6091.jpg" style="max-height: 70px;" class="logo">
-    </div>
-
-    <!--Contact Me Tab-->
-    <div class="dropdown">
-        <button class="contactme-button">Contact Me</button>
-        <div class="dropdown-content">
-            <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwQnhBvMTRrTZKgLCHZVKCXnSjksCXPWVrSKLHMgxXNwCWxCQXHGqkZvVfWXKqlBcsPRsNw" target="_blank">Email</a>
-            <p>715-821-8355</p>
-        </div>
-    </div>
-
-    <!--About Me Button-->
-    <a href="#aboutmesection" class="abtmelink"> About Me</a>
-
-    <!--Skills Button-->
-    <a href="#skill-section" class="skilllink">Skills</a>
-
-    <!--Profile Picture-->
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap" rel="stylesheet">
-
-
-    <div class="card">
-        <img src="profile_picture.jpg" class="prof-pic">
-    </div>
-
-    <!--Profile Name-->
-    <div class="profile-name">Payton Flood</div>
-
-    <!--Linktree Links-->
-    <a href="https://www.linkedin.com/in/payton-flood-6186aa170/" target="_blank" class="links1"> LinkedIn</a>
-
-    <a href="https://twitter.com/FloodPayton" target="_blank" class="links2"> Twitter</a>
-
-    <a href="https://github.com/paytonflood/paytonflood.github.io/blob/main/resume_fall2022.pdf" target="_blank" class="links3"> Resume</a>
-
-
-    <!--About Me Title-->
-    <div class="about-me-title">
-        <h1 id="aboutmesection">About Me</h1>
-    </div>
-
-    <!--About Me text-->
-    <div class="aboutme">
-        <p>I am a third year college student with a Computer Science major and a Mathematics minor at the University of Wisconsin La-Crosse</p>
-        <p>I made this "Linktree" style website as a side project, and to introduce myself to HTML, CSS and web development</p>
-        <p>I run track at The University of La-Crosse, I enjoy sports, being social, and coding!</p>
-    </div>
-
-
-    <!--Pictures at bottom-->
-    <img style="border: 2px solid black;" src="IMG-2693.jpg" width="32%"/>
-    <img style="border: 2px solid black;" src="IMG-2922.jpg" width="33%"/>
-    <img style="border: 2px solid black" src="IMG-0903.JPG" width="32%"/>
-
-    <!--Skills Section text-->
-    <div class="skills">
-        <h1 id="skill-section">Skills</h1>
-    </div> 
-
-    <div class="skills-txt">
-        <h1>Java:</h1>
-        <p>Java was the first programming language I ever learned and the language that I am most comfortable with.</p>
-        <h2>C:</h2>
-        <p>I have done coursework in C, this is the second language that I learned in college at La-Crosse.
-        <h3>HTML:</h3>
-        <p>I have made multiple webistes using HTML through personal projects and school, I am very comfortable with HTML.</p>
-        <h4>CSS:</h4>
-        <p>HTML and CSS go hand in hand, so I am also very comfortable with CSS.</p>
-        <h5>Microsoft Office Suite:</h5>
-        <p>I completed a course in which I received a certification for all of the Microsoft Office applications<br> I am comfortable in my ability to work with all of the Microsoft Suite programs.</p>
-    </div>
-</body>
-</html>
+  }
+  
+  
+  :root {
+    --primary: #22D2A0;
+    --secondary: #192824;
+    --background: #192824;
+    --green: #1FC11B;
+    --yellow: #FFD913;
+    --orange: #FF9C55;
+    --red: #FF5555;
+  } 
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: radial-gradient(var(--secondary) 30%, var(--background) 30%);
+    background-size: 2px 3px;
+    font-family: "Archivo", sans-serif;
+    color: var(--primary);
+  }
+  
