@@ -1,6 +1,6 @@
 /*used to set background color*/
 body{
-    background-color:rgb(16, 20, 15);
+    background-color:rgb(77, 116, 68);
 }
 /*black banner at top*/
 .banner{
@@ -84,8 +84,10 @@ body{
 }
 .links1:hover{
     color: black;
-    background-color: rgb(151, 151, 151);
-    opacity: 50%;
+    background-color: #ffffff;
+    opacity: 70%;
+
+    transition: ease 900ms;
 }
 .links2{
     text-decoration: none;
@@ -110,8 +112,10 @@ body{
 }
 .links2:hover{
     color: black;
-    background-color: rgb(151, 151, 151);
-    opacity: 50%;
+    background-color: #ffffff;
+    opacity: 70%;
+
+    transition: ease 900ms;
 }
 .links3{
     text-decoration: none;
@@ -136,8 +140,10 @@ body{
 }
 .links3:hover{
     color: black;
-    background-color: rgb(151, 151, 151);
-    opacity: 50%;
+    background-color: #ffffff;
+    opacity: 70%;
+
+    transition: ease 900ms;
 }
 /* Contact Me Dropdown*/
 .contactme-button{
@@ -236,7 +242,7 @@ body{
 
 /*Skills Header*/
 .skills{
-    font-size: 25px;
+    font-size: 20px;
     font-family: monospace;
 
     display: block;
@@ -295,8 +301,8 @@ body{
     font-size: 30px;
 }
 .skills-txt h5{
-    color: #FF5555;
-    
+    color: #60a0f5;
+
     margin-right: 33%;
     margin-top: 30px;
     margin-bottom: 30px;
