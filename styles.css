@@ -1,11 +1,11 @@
 /*used to set background color*/
 body{
-    background-color:rgb(77, 116, 68);
+    background-color:rgb(116, 116, 116);
 }
 /*black banner at top*/
 .banner{
     position: relative;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(8, 8, 8);
     height: 85px;
     width: 100%;
 }
@@ -45,7 +45,7 @@ body{
 /*about me section*/
 .about-me-title{
     font-size: 20px;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 10px;
 
     font-family: monospace;
@@ -157,8 +157,8 @@ body{
     width: 120px;
     height: 30px;
 
-    background-color: black;
     color: white;
+    background-color: rgb(8, 8, 8);
 
     border: none;
 }
@@ -180,7 +180,7 @@ body{
     display: none;
 
     position: absolute;
-    width: 100%;
+    width: 180%;
     overflow: auto;
     box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
 }
@@ -248,7 +248,7 @@ body{
     display: block;
     text-align: center;
 
-    margin-top: 200px;
+    margin-top: 100px;
 
     color: #22D2A0;
 }
@@ -385,7 +385,7 @@ body{
   
   
   :root {
-    --primary: #22D2A0;
+    --primary: #60a0f5;
     --secondary: #192824;
     --background: #192824;
     --green: #1FC11B;
