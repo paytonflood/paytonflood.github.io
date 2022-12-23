@@ -2,12 +2,52 @@
 body{
     background-color:rgb(116, 116, 116);
 }
-/*black banner at top*/
-.banner{
-    position: relative;
-    background-color: rgb(8, 8, 8);
-    height: 85px;
+p{
+    color: black;
+}
+.header{
+    display: flex;
+    padding: 20px 16px;
+    background:rgb(181, 181, 181);
+    color: rgb(31, 31, 31);
+
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+.sticky{
+    position: fixed;
+    top: 0;
     width: 100%;
+}
+.skillsbutton{
+    color: black;
+    text-decoration: none;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 17px;
+
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+}
+.skillsbutton:hover{
+    color:whitesmoke;
+    transition: ease 500ms;
+}
+.name-title{
+    margin-top:40px;
+    margin-left:50%;
+
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 50px;
+}
+.main{
+    display: flex;
+}
+.linktree{
+    margin-left: 50px;
 }
 /*main profile pic*/
 .prof-pic{
@@ -18,40 +58,33 @@ body{
     height: 400px;
     width: 100%;
 }
-/*top left logo and link back to homepage*/
-.logo{
-    position: absolute;
-    display: block;
-    margin-left: 15px;
-    margin-top: -80px;
-}
 .logo-container{
     position: relative;
     width: 66px;
     margin-left: 3px;
 }
-/*name under profile pic*/
-.profile-name{
-    font-family: monospace;
-    color: #FF5555;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 2px;
-
-    padding: 30px;
-    font-size: 50px;
-    margin-top: 10px;
+.pics{
+    margin-left:150px;
+}
+.mnt-pic{
+    margin-bottom: 200px;
+}
+.track-pic{
+    margin-bottom:-30px;
 }
 /*about me section*/
+.aboutme-section{
+    margin-left: 50px;
+}
 .about-me-title{
     font-size: 20px;
-    margin-top: 100px;
     margin-bottom: 10px;
+    margin-left: 15px;
+    margin-top:50px;
 
     font-family: monospace;
-    text-align: center;
 
-    color:#22D2A0;
+    color:#1f1f1f;
 }
 .aboutme{
     font-family: monospace;
@@ -64,12 +97,12 @@ body{
 .links1{
     text-decoration: none;
     font-family: monospace;
-    color: white;
+    color: rgb(47, 47, 47);
 
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 2px solid #FF9C55;
+    border: 2px solid #414141;
     border-width: 3px;
     padding: 20px;
 
@@ -92,12 +125,12 @@ body{
 .links2{
     text-decoration: none;
     font-family: monospace;
-    color: white;
+    color: rgb(47, 47, 47);
 
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 2px solid #FFD913;
+    border: 2px solid #6f6f6f;
     border-width: 3px;
     padding: 20px;
 
@@ -120,12 +153,12 @@ body{
 .links3{
     text-decoration: none;
     font-family: monospace;
-    color: white;
+    color: rgb(47, 47, 47);
 
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    border: 2px solid #1FC11B;
+    border: 2px solid #a1a1a1;
     border-width: 3px;
     padding: 20px;
 
@@ -145,100 +178,6 @@ body{
 
     transition: ease 900ms;
 }
-/* Contact Me Dropdown*/
-.contactme-button{
-    font-family: monospace;
-    font-size: 18;
-    font-weight: bold;
-
-    margin-left: 130px;
-    margin-top: -60px;
-
-    width: 120px;
-    height: 30px;
-
-    color: white;
-    background-color: rgb(8, 8, 8);
-
-    border: none;
-}
-.contactme-button:hover{
-    color: #FF5555;
-    transition: color .25s;
-}
-.dropdown {
-    display: inline-block;
-    position: relative;
-    width: 100px;
-}
-.dropdown-content {
-    margin-left: 145px;
-    margin-top: -30px;
-
-    text-align: center;
-    font-family: monospace;
-    display: none;
-
-    position: absolute;
-    width: 180%;
-    overflow: auto;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-    background-color: black;
-    transition: .35s ease;
-}
-.dropdown-content a, p{
-    display: block;
-    color: rgb(255, 228, 194);
-    padding: 5px;
-    text-decoration: none;
-}
-.dropdown-content a:hover {
-    color: #FFFFFF;
-    background-color: #5c5c5c;
-}
-/*about me button*/
-.abtmelink{
-    text-decoration: none;
-    font-family: monospace;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-
-    width: 120px;
-    display: block;
-    margin-left: 300px;
-    margin-top: -55px;
-
-    font-size: 18px;
-}
-.abtmelink:hover{
-    color: #FF9C55;
-    transition: color .25s;
-}
-
-/*SKILLS*/
-/*Skills Button*/
-.skilllink{
-    text-decoration: none;
-    font-family: monospace;
-    color: white;
-    font-weight: bold;
-    position: absolute;
-
-    width: 120px;
-    display: block;
-    margin-left: 440px;
-    margin-top: -55px;
-
-    font-size: 18px;
-}
-.skilllink:hover{
-    color: #FFD913;
-    transition: color .25s;
-}
 
 /*Skills Header*/
 .skills{
@@ -250,7 +189,7 @@ body{
 
     margin-top: 100px;
 
-    color: #22D2A0;
+    color: #1f1f1f;
 }
 /*Skills Text*/
 .skills-txt{
@@ -265,7 +204,7 @@ body{
     color:rgb(255, 228, 194);
 }
 .skills-txt h1{
-    color: #FF5555;
+    color: #414141;
 
     margin-right: 33%;
     margin-top: 30px;
@@ -274,7 +213,7 @@ body{
     font-size: 30px;
 }
 .skills-txt h2{
-    color: #FF9C55;
+    color: #383838;
 
     margin-right: 33%;
     margin-top: 30px;
@@ -283,7 +222,7 @@ body{
     font-size: 30px;
 }
 .skills-txt h3{
-    color: #FFD913;
+    color: #6f6f6f;
 
     margin-right: 33%;
     margin-top: 30px;
@@ -292,7 +231,7 @@ body{
     font-size: 30px;
 }
 .skills-txt h4{
-    color: #1FC11B;
+    color: #a1a1a1;
 
     margin-right: 33%;
     margin-top: 30px;
@@ -301,7 +240,7 @@ body{
     font-size: 30px;
 }
 .skills-txt h5{
-    color: #60a0f5;
+    color: #cfcfcf;
 
     margin-right: 33%;
     margin-top: 30px;
@@ -321,7 +260,7 @@ body{
     cursor: pointer;
     padding: 15px;
 
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
 
@@ -385,13 +324,13 @@ body{
   
   
   :root {
-    --primary: #60a0f5;
-    --secondary: #192824;
-    --background: #192824;
-    --green: #1FC11B;
-    --yellow: #FFD913;
-    --orange: #FF9C55;
-    --red: #FF5555;
+    --primary: #292929;
+    --secondary: #e8e8e8;
+    --background: #ffb050;
+    --green: #414141;
+    --yellow: #6f6f6f;
+    --orange: #a1a1a1;
+    --red: #cfcfcf;
   } 
   
   *{
