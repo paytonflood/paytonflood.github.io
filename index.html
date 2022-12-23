@@ -8,66 +8,40 @@
 </head>
 
 <body>
-    
-    <!--Banner-->
-    <div class="banner"> </div>
-    
-    <!--Personal Logo-->
-    <div class ="logo-container">
-        <img src="thumbnail_IMG_6091.jpg" style="max-height: 70px;" class="logo">
+    <div class="header" id="myHeader">
+        <h2>Welcome!</h2>
+        <a href="#skill-section" class="skillsbutton">Skills Section</a>
     </div>
 
-    <!--Contact Me Tab-->
-    <div class="dropdown">
-        <button class="contactme-button">Contact Me</button>
-        <div class="dropdown-content">
-            <p>paytonflood11@gmail.com</p>
+    <h2 class="name-title">Payton Flood</h2>
+    <div class="main">
+        <div class="linktree">
+            <!--Profile Picture-->
+            <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap" rel="stylesheet">
+
+
+            <div class="card">
+                <img src="profile_picture.jpg" class="prof-pic">
+            </div>
+            <!--Linktree Links-->
+            <a href="https://www.linkedin.com/in/payton-flood-6186aa170/" target="_blank" class="links1"> LinkedIn</a>
+            <a href="https://twitter.com/FloodPayton" target="_blank" class="links2"> Twitter</a>
+            <a href="https://github.com/paytonflood/paytonflood.github.io/blob/main/resume_fall2022.pdf" target="_blank" class="links3"> Resume</a>
+        </div>
+        <div class="aboutme-section">
+            <h2 class="about-me-title">About Me:</h2>
+            <p class="aboutme">I am a third year college student with a Computer Science major and a Mathematics minor at the University of Wisconsin La-Crosse.
+            I made this personal website as a side project, and to introduce myself to HTML, CSS, GitHub, and web development.
+            I run track at The University of La-Crosse, I enjoy sports, being social, and coding!</p>
+            <!--Pictures at bottom-->
+            <div class="pics">
+                <img class="mnt-pic" style="border: 2px solid black;" src="IMG-2693.jpg" width="28%"/>
+                <img class="grad-pic" style="border: 2px solid black" src="IMG-2922.jpg" width="30%"/>
+                <img class="track-pic" style="border: 2px solid black" src="IMG-0903.JPG" width="28%"/>
+            </div>
         </div>
     </div>
-
-    <!--About Me Button-->
-    <a href="#aboutmesection" class="abtmelink"> About Me</a>
-
-    <!--Skills Button-->
-    <a href="#skill-section" class="skilllink">Skills</a>
-
-    <!--Profile Picture-->
-    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Archivo:700&display=swap" rel="stylesheet">
-
-
-    <div class="card">
-        <img src="profile_picture.jpg" class="prof-pic">
-    </div>
-
-    <!--Profile Name-->
-    <div class="profile-name">Payton Flood</div>
-
-    <!--Linktree Links-->
-    <a href="https://www.linkedin.com/in/payton-flood-6186aa170/" target="_blank" class="links1"> LinkedIn</a>
-
-    <a href="https://twitter.com/FloodPayton" target="_blank" class="links2"> Twitter</a>
-
-    <a href="https://github.com/paytonflood/paytonflood.github.io/blob/main/resume_fall2022.pdf" target="_blank" class="links3"> Resume</a>
-
-
-    <!--About Me Title-->
-    <div class="about-me-title">
-        <h1 id="aboutmesection">About Me</h1>
-    </div>
-
-    <!--About Me text-->
-    <div class="aboutme">
-        <p>I am a third year college student with a Computer Science major and a Mathematics minor at the University of Wisconsin La-Crosse</p>
-        <p>I made this personal website as a side project, and to introduce myself to HTML, CSS, GitHub, and web development.</p>
-        <p>I run track at The University of La-Crosse, I enjoy sports, being social, and coding!</p>
-    </div>
-
-
-    <!--Pictures at bottom-->
-    <img style="border: 2px solid black;" src="IMG-2693.jpg" width="32%"/>
-    <img style="border: 2px solid black;" src="IMG-2922.jpg" width="33%"/>
-    <img style="border: 2px solid black" src="IMG-0903.JPG" width="32%"/>
 
     <!--Skills Section text-->
     <div class="skills">
@@ -88,4 +62,18 @@
         <p>I used Javascript and NodeJS for a semester-long class project in which I made a bookkeeping web application.</p>
     </div>
 </body>
+    <script>
+        window.onscroll = function() {scrollingHeader()}
+
+        var header = document.getElementById("myHeader")
+
+        var sticky = header.offsetTop;
+
+        function scrollingHeader() {
+            if(window.pageYOffset > sticky) header.classList.add('sticky')
+            else header.classList.remove('sticky')
+        }
+
+    </script>
 </html>
+
