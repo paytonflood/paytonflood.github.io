@@ -1,126 +1,78 @@
-body{
-    background-color: rgb(62, 83, 63);
+/* General styles for both mobile and desktop */
+body {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(62, 83, 63);
 }
-.header{
-    display: flex;
-    padding: 20px 16px;
-    background:rgb(181, 181, 181);
-    color: rgb(31, 31, 31);
 
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 20px;
+.header {
+  display: flex;
+  padding: 20px 16px;
+  background: rgb(181, 181, 181);
+  color: rgb(31, 31, 31);
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 20px;
 }
-.sticky{
-    position: fixed;
-    top: 0;
-    width: 100%;
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
-.top-container{
-    display: flex;
+
+.top-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
-.media-links{
-  margin-left: 150px;
+
+/* Media Links */
+.media-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 215px;
+  margin-left: 100px;
 }
-.links1{
-    text-decoration: none;
-    font-family: monospace;
-    color: rgb(214, 214, 214);
 
-    text-align: center;
-    margin-top: 200px;
-    margin-bottom: 20px;
-    border: 2px solid #f1f1f1;
-    border-width: 3px;
-    padding: 20px;
-
-    width: 290px;
-    display: block;
-    margin-right: auto;
-
-    border-radius: 40px;
-
-    font-size: 18px;
+.links1, .links2, .links3 {
+  text-decoration: none;
+  font-family: monospace;
+  color: rgb(214, 214, 214);
+  text-align: center;
+  margin: 10px;
+  padding: 20px;
+  width: 290px;
+  max-width: 90%;
+  border: 2px solid #f1f1f1;
+  border-radius: 40px;
+  font-size: 18px;
 }
-.links1:hover{
-    color: black;
-    background-color: #ffffff;
-    opacity: 70%;
 
-    transition: ease 900ms;
+.links1:hover, .links2:hover, .links3:hover {
+  color: black;
+  background-color: #ffffff;
+  opacity: 0.7;
+  transition: ease 900ms;
 }
-.links2{
-    text-decoration: none;
-    font-family: monospace;
-    color: rgb(214, 214, 214);
 
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 2px solid #b7b7b7;
-    border-width: 3px;
-    padding: 20px;
-
-    width: 290px;
-    display: block;
-    margin-right: auto;
-
-    border-radius: 40px;
-
-    font-size: 18px;
+/* Profile Picture */
+.prof-pic {
+  display: block;
+  border-radius: 2%;
+  height: auto;
+  width: 100%;
+  max-width: 375px;
 }
-.links2:hover{
-    color: black;
-    background-color: #ffffff;
-    opacity: 70%;
 
-    transition: ease 900ms;
-}
-.links3{
-    text-decoration: none;
-    font-family: monospace;
-    color: rgb(214, 214, 214);
-    
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border: 2px solid #868686;
-    border-width: 3px;
-    padding: 20px;
+.prof-pic-container {
+  margin-top: 125px;
+  text-align: center;
 
-    width: 290px;
-    display: block;
-    margin-right: auto;
-
-    border-radius: 40px;
-
-    font-size: 18px;
-}
-.links3:hover{
-    color: black;
-    background-color: #ffffff;
-    opacity: 70%;
-
-    transition: ease 900ms;
-}
-.prof-pic{
-    display: block;
-
-    border-radius: 2%;
-
-    height: 400px;
-    width: 100%;
-}
-.prof-pic-container{
-    display: block;
-    width: 375px;
-    min-height: 90px;
-    cursor: pointer;
-    padding: 15px;
-
-    margin-top: 100px;
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -220,8 +172,43 @@ body{
     cursor: pointer;
   }
 
-  .paragraph{
-    text-decoration: none;
-    font-family: monospace;
 
+
+  /* Paragraph */
+.paragraph {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.paragraph-words {
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+  .top-container {
+      flex-direction: column;
+      align-items: center;
   }
+
+  .media-links {
+      margin: 10px;
+  }
+
+  .prof-pic-container {
+      margin: 10px;
+  }
+
+  .prof-pic {
+      max-width: 100%;
+      height: auto;
+  }
+
+  .wrapper {
+      width: 90%;
+  }
+}
