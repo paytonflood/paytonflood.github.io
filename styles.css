@@ -86,7 +86,7 @@ body {
   
   .wrapper {
     height: 500px;
-    width: 23%;
+    width: 350px;
     display: flex;
     border-radius: 2%;
     justify-content: center;
