@@ -1,9 +1,19 @@
 /* General styles for both mobile and desktop */
+*{
+  padding: 0;
+  margin: 0;
+}
 body {
   font-family: "Inter", sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(62, 83, 63);
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  font-family: monospace;
 }
 
 .header {
@@ -186,6 +196,25 @@ body {
   font-size: 18px;
   line-height: 1.6;
   color: #fff;
+}
+
+.skills{
+  margin-top: 150px;
+}
+.skillcards{
+  font-family: monospace;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 25%;
+
+  font-size: 30px;
+  color: #f1f1f1;
+}
+.skillwords{
+  font-family: monospace;
+  text-align: center;
+  color: #dfdfdf;
+  font-size: 18px;
 }
 
 /* Responsive adjustments for mobile */
