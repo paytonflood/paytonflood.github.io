@@ -18,12 +18,19 @@ h1{
 
 .header {
   display: flex;
+  align-items: center;
   padding: 20px 16px;
   background: rgb(181, 181, 181);
   color: rgb(31, 31, 31);
   font-family: monospace;
   font-weight: bold;
   font-size: 20px;
+}
+
+#pflogo{
+  height: 50px;
+  margin-right: 25px;
+  margin-left: 15px;
 }
 
 .sticky {
