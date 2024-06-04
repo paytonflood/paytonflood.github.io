@@ -61,6 +61,26 @@ document.addEventListener('DOMContentLoaded', () => {
         if (e.code === 'Space') keys.space = false;
     });
 
+    moveRight = document.getElementById('right');
+    moveLeft = document.getElementById('left');
+    shoot = document.getElementById('shoot');
+
+    moveRight.addEventListener('mousedown', () => {
+        keys.right = true;
+    });
+    moveRight.addEventListener('mouseup', () => {
+        keys.right = false;
+    });
+    moveLeft.addEventListener('mousedown', () => {
+        keys.left = true;
+    });
+    moveLeft.addEventListener('mouseup', () => {
+        keys.left = false;
+    });
+    shoot.addEventListener('click', () => {
+        createBullet(ship.x + ship.width / 2 - bulletWidth / 2, ship.y);
+    });
+
     function createBullet(x, y) {
         bullets.push({ x, y, width: bulletWidth, height: bulletHeight });
     }
@@ -107,10 +127,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function drawEnemies() {
-        /* context.fillStyle = 'red';
-        enemies.forEach((enemy) => {
-            context.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
-        }); */
         var enemy_img = new Image();
         enemy_img.src = 'images/enemy.png';
         enemies.forEach((enemy) => {

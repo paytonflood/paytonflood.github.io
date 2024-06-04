@@ -164,3 +164,7 @@ canvas {
     background-color: black;
     display: block;
 }
+
+.left {
+    transform: scaleX(-1);
+}
