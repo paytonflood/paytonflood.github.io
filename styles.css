@@ -10,6 +10,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.description-text {
+    margin-bottom: 25px;
+}
+
 header {
     background: #000000;
     padding: 10px 0;
