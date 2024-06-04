@@ -101,15 +101,20 @@ document.addEventListener('DOMContentLoaded', () => {
         if (shouldChangeDirection) {
             enemyDirection *= -1;
             enemies.forEach((enemy) => {
-                enemy.y += enemyHeight / 2; // Move down slightly when changing direction
+                enemy.y += enemyHeight; // Move down slightly when changing direction
             });
         }
     }
 
     function drawEnemies() {
-        context.fillStyle = 'red';
+        /* context.fillStyle = 'red';
         enemies.forEach((enemy) => {
             context.fillRect(enemy.x, enemy.y, enemy.width, enemy.height);
+        }); */
+        var enemy_img = new Image();
+        enemy_img.src = 'images/enemy.png';
+        enemies.forEach((enemy) => {
+            context.drawImage(enemy_img, enemy.x, enemy.y, enemy.width, enemy.height);
         });
     }
 
@@ -131,9 +136,6 @@ document.addEventListener('DOMContentLoaded', () => {
         var ship_img = new Image();
         ship_img.src = 'images/usership.png';
         context.drawImage(ship_img, ship.x, ship.y, ship.width, ship.height);
-
-        /* context.fillStyle = 'white';
-        context.fillRect(ship.x, ship.y, ship.width, ship.height); */
     }
 
     function moveShip() {
