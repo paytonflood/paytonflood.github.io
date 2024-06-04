@@ -150,3 +150,17 @@ section {
         opacity: 1;
     }
 }
+
+#game-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    border: 1px solid white;
+}
+
+canvas {
+    background-color: black;
+    display: block;
+}
