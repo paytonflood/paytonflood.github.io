@@ -29,6 +29,7 @@ nav ul {
     justify-content: center;
     margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
 nav ul li {
@@ -157,7 +158,6 @@ section {
     justify-content: center;
     align-items: center;
     background-color: black;
-    border: 1px solid white;
 }
 
 canvas {
@@ -167,4 +167,62 @@ canvas {
 
 .left {
     transform: scaleX(-1);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero {
+        background-position: center;
+        background-size: cover;
+    }
+
+    .hero-content h1 {
+        font-size: 1.5em;
+    }
+
+    .hero-content p {
+        font-size: 0.9em;
+    }
+
+    .button {
+        font-size: 0.9em;
+    }
+
+    #about p {
+        font-size: 0.9em;
+    }
+
+    .profile-picture {
+        width: 100px;
+        height: 100px;
+    }
+
+    #game-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    canvas {
+        width: 100%;
+        height: auto;
+    }
+
+    #controls {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .arrow {
+        margin: 10px;
+    }
 }

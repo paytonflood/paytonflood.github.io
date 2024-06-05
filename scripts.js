@@ -46,8 +46,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const bulletHeight = 10;
     const enemyWidth = 40;
     const enemyHeight = 40;
-    let enemySpeed = 3;
+    let enemySpeed = 30;
     let enemyDirection = 1;
+    let gameOver = false;
 
     document.addEventListener('keydown', (e) => {
         if (e.code === 'ArrowLeft') keys.left = true;
@@ -79,6 +80,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     shoot.addEventListener('click', () => {
         createBullet(ship.x + ship.width / 2 - bulletWidth / 2, ship.y);
+    });
+    //for mobile
+    moveRight.addEventListener('touchstart', () => {
+        keys.right = true;
+    });
+    moveRight.addEventListener('touchend', () => {
+        keys.right = false;
+    });
+    moveLeft.addEventListener('touchstart', () => {
+        keys.left = true;
+    });
+    moveLeft.addEventListener('touchend', () => {
+        keys.left = false;
     });
 
     function createBullet(x, y) {
@@ -146,6 +160,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         });
+        //collisions for ship and enemies
+        enemies.forEach((enemy) => {
+            if (ship.x < enemy.x + enemy.width &&
+                ship.x + ship.width > enemy.x &&
+                ship.y < enemy.y + enemy.height &&
+                ship.y + ship.height > enemy.y) {
+                gameOver = true;
+            }
+        });
     }
 
     function drawShip() {
@@ -169,6 +192,13 @@ document.addEventListener('DOMContentLoaded', () => {
         context.clearRect(0, 0, canvas.width, canvas.height);
     }
 
+    function drawGameOver() {
+        context.fillStyle = 'red';
+        context.font = '96px Press Start 2P, cursive';
+        context.textAlign = 'center';
+        context.fillText('Game Over!!!', canvas.width / 2, canvas.height / 2);
+    }
+
     document.addEventListener('keydown', (e) => {
         if (e.code === 'Space') {
             createBullet(ship.x + ship.width / 2 - bulletWidth / 2, ship.y);
@@ -176,16 +206,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function update() {
-        moveShip();
-        moveEnemies();
-        checkCollisions();
-        clear();
-        drawShip();
-        drawBullets();
-        drawEnemies();
-        requestAnimationFrame(update);
+        if (!gameOver) {
+            moveShip();
+            moveEnemies();
+            checkCollisions();
+            clear();
+            drawShip();
+            drawBullets();
+            drawEnemies();
+            requestAnimationFrame(update);
+        } else {
+            clear();
+            drawShip();
+            drawBullets();
+            drawEnemies();
+            drawGameOver();
+        }
     }
 
     createEnemies();
     update();
 });
+
