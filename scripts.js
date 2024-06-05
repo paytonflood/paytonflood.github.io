@@ -20,7 +20,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const canvas = document.getElementById('gameCanvas');
     const context = canvas.getContext('2d');
     const restartButton = document.getElementById('restartButton');
+    const gameoverText = document.getElementById('gameoverText');
     restartButton.style.display = 'none';
+    gameoverText.style.display = 'none';
 
     const shipWidth = 70;
     const shipHeight = 70;
@@ -195,10 +197,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function drawGameOver() {
-        context.fillStyle = 'red';
-        context.font = '96px Press Start 2P, cursive';
-        context.textAlign = 'center';
-        context.fillText('Game Over!!!', canvas.width / 2, canvas.height / 2);
+        gameoverText.style.display = 'block';
+        gameoverText.style.position = 'absolute';
+        gameoverText.style.padding = '10px 20px';
+        gameoverText.style.fontSize = '48px';
+        gameoverText.style.color = 'red';
+        gameoverText.style.marginBottom = '100px';
 
         restartButton.style.position = 'absolute';
         restartButton.style.top = '50%';
@@ -225,6 +229,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bullets.length = 0;
         enemies.length = 0;
         restartButton.style.display = 'none';
+        gameoverText.style.display = 'none';
         createEnemies();
         update();
     }
