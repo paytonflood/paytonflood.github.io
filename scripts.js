@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bulletHeight = 10;
     const enemyWidth = 40;
     const enemyHeight = 40;
-    let enemySpeed = 30;
+    let enemySpeed = 5;
     let enemyDirection = 1;
     let gameOver = false;
 
