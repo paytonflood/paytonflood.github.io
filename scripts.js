@@ -19,6 +19,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Game logic
     const canvas = document.getElementById('gameCanvas');
     const context = canvas.getContext('2d');
+    const restartButton = document.getElementById('restartButton');
+    restartButton.style.display = 'none';
 
     const shipWidth = 70;
     const shipHeight = 70;
@@ -46,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const bulletHeight = 10;
     const enemyWidth = 40;
     const enemyHeight = 40;
-    let enemySpeed = 5;
+    let enemySpeed = 50;
     let enemyDirection = 1;
     let gameOver = false;
 
@@ -197,6 +199,34 @@ document.addEventListener('DOMContentLoaded', () => {
         context.font = '96px Press Start 2P, cursive';
         context.textAlign = 'center';
         context.fillText('Game Over!!!', canvas.width / 2, canvas.height / 2);
+
+        restartButton.style.position = 'absolute';
+        restartButton.style.top = '50%';
+        restartButton.style.left = '50%';
+        restartButton.style.transform = 'translate(-50%, -50%)';
+        restartButton.style.padding = '10px 20px';
+        restartButton.style.fontSize = '16px';
+        restartButton.style.backgroundColor = 'black';
+        restartButton.style.color = 'red';
+        restartButton.style.border = 'red 2px solid';
+        restartButton.style.borderRadius = '5px';
+        restartButton.style.cursor = 'pointer';
+        restartButton.style.marginTop = '30px';
+
+        restartButton.style.display = 'block';
+        restartButton.addEventListener('click', restartGame);
+    }
+
+    function restartGame() {
+        // Reset game variables
+        gameOver = false;
+        ship.x = shipX;
+        ship.y = shipY;
+        bullets.length = 0;
+        enemies.length = 0;
+        restartButton.style.display = 'none';
+        createEnemies();
+        update();
     }
 
     document.addEventListener('keydown', (e) => {
